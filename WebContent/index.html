@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="user login and registration">
+    <meta name="author" content="Siyuan Zhang">
+    <title>Login system</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="top-header">
+        <a id="logout-link" href="logout">退出登陆</a>
+        <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+    </header>
+    <div class="container">
+    	<header>
+    		<p>用户注册登陆系统</p>
+    	</header>
+        <section class="main-section">
+            <div id="login-form">
+            	<span id="welcome-msg"></span><br>
+                <label for="username">用户名:</label>
+                <input id="username" name="username" type="text">
+                <label for="password">密码:</label>
+                <input id="password" name="password" type="password">
+                <button id="register-form-btn">新用户？注册</button>
+                <button id="login-btn">登陆</button>
+                <p id="login-error"></p>
+            </div>
+
+            <div id="register-form">
+                <label for="username">用户名: *</label>
+                <p>
+                    用户名长度6-18个字符，可使用字母、数字、下划线，需以字母开头
+                </p>
+                <input id="register-username" name="username" type="text">
+                <label for="password">密码: *</label>
+                <p>
+                    密码长度8-18个字符，至少包含以下四类字符中的三类:大写字母、小写字母、数字，以及特殊符号，仅限!@#$&()，不得与用户名重复
+                </p>
+                <input id="register-password1" name="password" type="password">
+                <label for="password">确认密码: *</label>
+                <input id="register-password2" name="password" type="password">
+                <button id="login-form-btn">返回登陆</button>
+                <button id="register-btn">注册</button>
+                <p id="register-result"></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p class="title">Login and Registration System</p>
+        <p>"Hope you enjoy your life!"</p>
+        <ul>
+            <li>
+                <p><i class="fa fa-map-o fa-2x"></i></p>
+                <p>Washington DC</p>
+            </li>
+            <li>
+                <p><i class="fa fa-envelope-o fa-2x"></i></p>
+                <p>imsiyuan.z@gmail.com</p>
+            </li>
+            <li>
+                <p><i class="fa fa-phone fa-2x"></i></p>
+                <p>+1 5713449573</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  	<script src="scripts/main.js"></script>
+</body>
+</html>

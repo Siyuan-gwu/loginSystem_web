@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #434343;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+/**
+ * top header
+ */
+.top-header {
+    align-items: center;
+    background: #bfcedf;
+    box-shadow: 0px 2px 10px #333333;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.avatar {
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #333C4D;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-left: 9px;
+    padding-top: 5px;
+    width: 40px;
+}
+
+#logout-link {
+    padding-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    margin: 60px auto;
+    max-width: 1000px;
+    min-width: 600px;
+}
+
+.container>header {
+    align-items: center;
+    /*background:*/
+    /*        url('http://eudreamvilla.com/wp-content/uploads/2017/10/romantic-dinner.jpg')*/
+    /*        no-repeat 50% 40%;*/
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+.container>header p {
+    color: #FBAF41;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+/**
+ * main section
+ */
+.main-section {
+    /*background: #F3BB43;*/
+    background-color:rgba(255,255,255,0.75);
+}
+#welcome-msg {
+    padding-right: 10px;
+}
+
+/**
+    login form
+ */
+#login-form {
+    color: #624630;
+    margin: 0px auto;
+    overflow: auto;
+    padding: 40px;
+    width: 350px;
+}
+
+#login-form label {
+    display: block;
+}
+
+#login-form input {
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+#login-form #login-btn {
+    cursor: pointer;
+    float: right;
+    padding: 8px 20px;
+    text-align: right;
+}
+
+#login-form #register-form-btn {
+    cursor: pointer;
+    float: left;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+#login-error {
+    clear: both;
+    color: #990000;
+    padding-top: 10px;
+}
+
+/**
+ * register form
+ */
+#register-form {
+    color: #624630;
+    margin: 0px auto;
+    overflow: auto;
+    padding: 40px;
+    width: 350px;
+}
+
+#register-form p {
+    font-size: 0.5em;
+}
+
+#register-form label {
+    display: block;
+}
+
+#register-form input {
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+#register-form #login-form-btn {
+    cursor: pointer;
+    float: left;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+#register-form #register-btn {
+    cursor: pointer;
+    float: right;
+    padding: 8px 20px;
+    text-align: right;
+}
+
+#register-result {
+    clear: both;
+    color: #990000;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+/**
+ * footer section
+ */
+footer {
+    background: #434343;
+    font-size: 0.8em;
+    height: 200px;
+    position: relative;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p.title {
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+footer ul {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+footer ul li {
+    list-style: none;
+    flex: 1;
+}
